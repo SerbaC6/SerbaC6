@@ -1,4 +1,4 @@
-<h2 align="center">Hi, I'm Șerban Ciumacencu</h2>
+<h2 align="center">Hi, I'm Șerban-Ioan Ciumacencu</h2>
 
 <p align="center">
   Computer Science student at <b>University POLITEHNICA of Bucharest</b>.<br>
@@ -42,6 +42,6 @@
 ### Activity
 
 <p align="center">
-  <img src="metrics.languages.svg" alt="Most used languages" width="49%">
-  <img src="metrics.isocalendar.svg" alt="Contribution calendar" width="49%">
+  <img src="metrics.languages.svg" alt="Most used languages" width="49%" align="top">
+  <img src="metrics.calendar.svg" alt="Contribution calendar" width="49%" align="top">
 </p>
