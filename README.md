@@ -15,7 +15,7 @@
 ### What I'm working on
 
 - **AI agent security research** (MLSP group): measuring how easily a tool-using LLM agent is hijacked by *indirect prompt injection*, and whether a pre-action policy filter can stop it without making the agent useless. I built the agent, the sandboxed tools and the benign-task benchmark.
-- **Numerical Methods Visualizer**: a static site with 18 interactive topics (theory, explainer clips and live plots you can tweak) for students taking Numerical Methods.
+- **Numerical Methods Visualizer**: a static site with 18 interactive topics (theory, explainer clips and live plots you can play with) for students taking the Numerical Methods course.
 
 ### Featured projects
 
