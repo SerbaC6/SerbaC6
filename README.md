@@ -6,16 +6,15 @@
 </p>
 
 <p align="center">
-  <a href="https://www.linkedin.com/in/YOUR-LINKEDIN/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn"></a>
-  <a href="mailto:YOUR-EMAIL@example.com"><img src="https://img.shields.io/badge/Email-555555?style=flat-square&logo=gmail&logoColor=white" alt="Email"></a>
-  <a href="https://serbac6.github.io/numerical-methods-visualizer/"><img src="https://img.shields.io/badge/Live%20project-Numerical%20Methods%20Visualizer-1f6feb?style=flat-square" alt="Live project"></a>
+  <a href="https://www.linkedin.com/in/serban-c-494500397"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn"></a>
+  <a href="mailto:serbaciumacencu@gmail.com"><img src="https://img.shields.io/badge/Email-555555?style=flat-square&logo=gmail&logoColor=white" alt="Email"></a>
 </p>
 
 ---
 
 ### What I'm working on
 
-- **AI agent security research** (MLSP group): measuring how easily a tool-using LLM agent is hijacked by *indirect prompt injection*, and whether a pre-action policy filter can stop it without making the agent useless. I built the agent loop, the sandboxed tools and the benign-task benchmark.
+- **AI agent security research** (MLSP group): measuring how easily a tool-using LLM agent is hijacked by *indirect prompt injection*, and whether a pre-action policy filter can stop it without making the agent useless. I built the agent, the sandboxed tools and the benign-task benchmark.
 - **Numerical Methods Visualizer**: a static site with 18 interactive topics (theory, explainer clips and live plots you can tweak) for students taking Numerical Methods.
 
 ### Featured projects
