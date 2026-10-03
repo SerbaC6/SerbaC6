@@ -1,26 +1,48 @@
-name: Generate GitHub Metrics
+name: Metrics
+
 on:
-  # Triggers the workflow every 24 hours
-  schedule: [{cron: "0 0 * * *"}]
-  # Allows you to run the workflow manually from the Actions tab
+  # Every day at 04:00 UTC (07:00 in Bucharest). GitHub may start it a bit later.
+  schedule: [{ cron: "0 4 * * *" }]
+  # "Run workflow" button in the Actions tab
   workflow_dispatch:
-  # Runs when you update this file
-  push: {branches: ["master", "main"]}
+  # Re-run only when this file changes, not on every README edit
+  push:
+    branches: [main]
+    paths: [".github/workflows/metrics.yml"]
+
+# Never let two runs commit at the same time
+concurrency:
+  group: metrics
+  cancel-in-progress: false
+
 jobs:
-  github-metrics:
+  metrics:
     runs-on: ubuntu-latest
     permissions:
       contents: write
     steps:
-      - uses: lowlighter/metrics@latest
+      - name: Most used languages
+        uses: lowlighter/metrics@latest
         with:
-          # This connects to the secret you just made
+          filename: metrics.languages.svg
           token: ${{ secrets.METRICS_TOKEN }}
-          
-          # The visual configuration matching your screenshot
-          template: classic
-          base: header, activity, community, repositories, metadata
+          base: ""
+          config_timezone: Europe/Bucharest
           plugin_languages: yes
-          plugin_languages_ignored: html, css
+          plugin_languages_sections: most-used
           plugin_languages_details: percentage
-          plugin_lines: yes
+          plugin_languages_ignored: html, css
+          plugin_languages_limit: 6
+          plugin_languages_threshold: 2%
+          # If a repo contains vendored code / notebooks that skew the numbers,
+          # list it here, e.g.: plugin_languages_skipped: some-repo, other-repo
+
+      - name: Contribution calendar
+        uses: lowlighter/metrics@latest
+        with:
+          filename: metrics.isocalendar.svg
+          token: ${{ secrets.METRICS_TOKEN }}
+          base: ""
+          config_timezone: Europe/Bucharest
+          plugin_isocalendar: yes
+          plugin_isocalendar_duration: half-year
