@@ -42,6 +42,5 @@
 ### Activity
 
 <p align="center">
-  <img src="metrics.languages.svg" alt="Most used languages" width="49%" align="top">
-  <img src="metrics.calendar.svg" alt="Contribution calendar" width="49%" align="top">
+  <img src="metrics.languages.svg" alt="Most used languages" align="top">
 </p>
